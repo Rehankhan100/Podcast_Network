@@ -1,0 +1,159 @@
+$white: #FFFFFF;
+$highlight: #d2674e;
+$dark: #22292e;
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper_wide{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper_skinny{
+  width: 50%;
+  margin: 0 auto;
+}
+.cf:before, .cf:after{
+  content: " ";
+  display: table;
+}
+
+.cf:after{
+  clear: both;
+}
+
+.button1{
+  color: $white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+  width: 12rem;
+}
+
+.button_highlight{
+  background: $highlight;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($highlight, 7.5%);
+  }
+}
+
+.button_white
+{
+  background: $white;
+  color: $dark;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($dark, 90%);
+  }
+}
+
+#main_header {
+color: $dark;
+background: $white;
+padding: 2.5rem 0;
+  #logo {
+    float: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark;
+    text-decoration: none;
+  }
+  nav{
+    float: right;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline;
+        margin-left: 2.5rem;
+        a {
+          color: $dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#banner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  margin-bottom: 4rem;
+    h1 {
+      text-align: center;
+      color:$white;
+      font-size: 2.6rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin:0;
+      padding: 8rem 0;
+    }
+}
+
+.podcasts_banner{
+    background-image: url(../img/montain.jpg);
+}
+.sign_in_banner{
+  background-image: url(../img/sign_in_banner-1.jpg);
+}
+.sign_up_banner{
+  background-image: url(../img/street-3.jpg);
+}
+
+.paginations:before, .paginations:after{
+  content:" ";
+  display: table;
+}
+
+.paginations:after {
+  clear: both;
+}
+
+.paginations {
+  text-align: center;
+  margin: 2rem 0;
+  a, .previous_page, .current, .next_page {
+    padding: 0.75rem 1rem;
+    margin: 0.25rem;
+    border-radius: .15rem;
+    line-height: 1.25;
+    text-decoration: none;
+    background: #EDEFF5;
+    font-weight: 700;
+    font-size: .7rem;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
+  }
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: #EDEFF5;
+    }
+  }
+}
+@import "normalize";
+@import "welcome";
+// @import "podcast";
