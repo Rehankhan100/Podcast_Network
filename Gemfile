@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #use devise for sign up or login
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
+#foundation Framework
+gem 'foundation-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'bcrypt', '~> 3.1', '>= 3.1.10'
