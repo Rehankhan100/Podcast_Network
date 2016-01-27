@@ -1,0 +1,83 @@
+<div id="podcast_show">
+  <div id="show_banner">
+    <div class="wrapper">
+      <h1><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+      <% unless @podcast.itunes.blank? %>
+        <a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+      <% end %>
+      <% unless @podcast.stitcher.blank? %>
+      <a href="<%= @podcast.stitcher %>" class="subscribe_link">Stitcher</a>
+      <% end %>
+      <% unless @podcast.podbay.blank? %>
+      <a href="<%= @podcast.podbay %>" class="subscribe_link">Podbay</a>
+      <% end %>
+    </div>
+  </div>
+  <div id="breadcrumbs">
+    <%= link_to podcasts_path do %>
+      All Podcast
+      <span>/</span>
+      The Rocketship Podcast
+    <% end %>
+  </div>
+   <div id="episodes">
+     <div class="wrapper_skinny">
+       <ul class="cf">
+         <li class="cf">
+           <div class="episode_thumbnail">
+             <a href="episode.html">
+               <img src="img/sohai.jpg" alt="Sohai Rehan">
+             </a>
+           </div>
+           <div class="episode_overview">
+             <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Month</a></h2>
+              <p class="description">Sohai ali is founder of anything which rehan have and one day she will became my heart one day i hold her hand and walk in a world most expensive street.</p>
+           </div>
+         </li>
+
+         <li class="cf">
+           <div class="episode_thumbnail">
+             <a href="episode.html">
+               <img src="img/sohai.jpg" alt="Sohai Rehan">
+             </a>
+           </div>
+           <div class="episode_overview">
+             <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Month</a></h2>
+              <p class="description">Sohai ali is founder of anything which rehan have and one day she will became my heart one day i hold her hand and walk in a world most expensive street.</p>
+           </div>
+         </li>
+
+         <li class="cf">
+           <div class="episode_thumbnail">
+             <a href="episode.html">
+               <img src="img/sohai.jpg" alt="Sohai Rehan">
+             </a>
+           </div>
+           <div class="episode_overview">
+             <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Month</a></h2>
+              <p class="description">Sohai ali is founder of anything which rehan have and one day she will became my heart one day i hold her hand and walk in a world most expensive street.</p>
+           </div>
+         </li>
+
+         <li class="cf">
+           <div class="episode_thumbnail">
+             <a href="episode.html">
+               <img src="img/sohai.jpg" alt="Sohai Rehan">
+             </a>
+           </div>
+           <div class="episode_overview">
+             <h2><a href="episode.html">How to Pull Off 12 (Well Executed) Startups in 12 Month</a></h2>
+              <p class="description">Sohai ali is founder of anything which rehan have and one day she will became my heart one day i hold her hand and walk in a world most expensive street.</p>
+           </div>
+         </li>
+       </ul>
+     </div>
+   </div>
+  </div>
+    <div class="paginations">
+      <span class="previous_page disabled">Previous</span>
+        <em class="current">1</em>
+        <a href="#">2</a>
+        <a class="next_page" href="#">Next</a>
+    </div>
